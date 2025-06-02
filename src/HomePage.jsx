@@ -13,20 +13,12 @@ import ContactPage from './ContactPage'
 function HomePage() {
   return (
     <div>
-      <TopBar />
-      <Navbar/>
-      <AboutUsPage />
-      
-      {/* <Hero />
+      <Hero />
       <PopularCourses />
       <RegisterNow />
       <TopCourses />
       <FAQ />
       <Testimonials />
-       */}
-      {/* <ContactPage /> */}
-      <ContactUs />
-      <Footer />
     </div>
   );
 }

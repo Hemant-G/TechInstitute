@@ -3,34 +3,34 @@ import React from 'react';
 const TopCourses = () => {
   const courses = [
     {
-      imageUrl: 'https://via.placeholder.com/300/008080/FFFFFF?Text=Digital%20Marketing',
+      imageUrl: 'https://via.placeholder.com/300/ADD8E6/FFFFFF?Text=AutoCAD',
+      title: 'AutoCAD Courses',
+      description: 'Master the fundamentals and advanced techniques of 2D and 3D CAD using AutoCAD software.',
+    },
+    {
+      imageUrl: 'https://via.placeholder.com/300/87CEEB/FFFFFF?Text=CATIA',
+      title: 'CATIA Courses',
+      description: 'Learn the powerful CAD, CAE, and CAM capabilities of CATIA, essential for automotive and aerospace design.',
+    },
+    {
+      imageUrl: 'https://via.placeholder.com/300/6495ED/FFFFFF?Text=SolidWorks',
+      title: 'SolidWorks Courses',
+      description: 'Explore solid modeling and design with SolidWorks, a user-friendly software for various engineering applications.',
+    },
+    {
+      imageUrl: 'https://via.placeholder.com/300/4169E1/FFFFFF?Text=Autodesk%20Fusion%20360',
+      title: 'Autodesk Fusion 360 Courses',
+      description: 'Dive into the integrated CAD, CAM, CAE, and PCB platform of Autodesk Fusion 360 for modern product development.',
+    },
+    {
+      imageUrl: 'https://via.placeholder.com/300/1E90FF/FFFFFF?Text=Digital%20Marketing',
       title: 'Digital Marketing Courses',
-      description: 'Digital marketing is the act of dealing products through channels similar as social media, SEO, mail, and mobile apps.',
+      description: 'Learn the strategies and tactics to succeed in the online world, from SEO to social media and content marketing.',
     },
     {
-      imageUrl: 'https://via.placeholder.com/300/8FBC8F/FFFFFF?Text=Accounting',
-      title: 'Accounting Courses',
-      description: 'Accounting refers to organizing pocket sales and records. We give top Accounting Courses in Hoshiarpur.',
-    },
-    {
-      imageUrl: 'https://via.placeholder.com/300/4682B4/FFFFFF?Text=Graphic%20Design',
-      title: 'Graphic Designing Courses',
-      description: 'Graphic designers produce visual conceptions, using computer software at Techcadd Computer Institute.',
-    },
-    {
-      imageUrl: 'https://via.placeholder.com/300/D2691E/FFFFFF?Text=Basic%20Computer',
-      title: 'Basic Computer Courses',
-      description: 'This course covers the history and present status of computers, figuring systems, and their operations.',
-    },
-    {
-      imageUrl: 'https://via.placeholder.com/300/556B2F/FFFFFF?Text=Coding',
-      title: 'Coding Languages Courses',
-      description: 'Coding Language refers to the set of instructions, or a system of rules, written in a particular programming language.',
-    },
-    {
-      imageUrl: 'https://via.placeholder.com/300/A0522D/FFFFFF?Text=Placeholder%206',
-      title: 'Placeholder Course 6',
-      description: 'This is a placeholder description for the sixth course card.',
+      imageUrl: 'https://via.placeholder.com/300/0000CD/FFFFFF?Text=IT%20Related',
+      title: 'IT Related Courses',
+      description: 'Explore a wide range of courses in information technology, including programming, networking, cybersecurity, and more.',
     },
   ];
 

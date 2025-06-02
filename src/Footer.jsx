@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
         <div>
           <img
-            src="/logo-white.png"
+            src="../src/assets/logo.jpg"
             alt="Tech CADD Logo"
             className="h-8 mb-2"
           />{" "}

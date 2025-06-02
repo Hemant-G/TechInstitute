@@ -2,10 +2,16 @@ import React from 'react';
 
 const PopularCourses = () => {
   const courses = [
-    { title: 'Web Design', image: '/web-design.jpg' },
-    { title: 'Website Development', image: '/website-development.jpg' },
+    { title: 'Autocad', image: '/autocad.jpg' },
+    { title: 'Catia', image: '/catia.jpg' },
+    { title: 'Solidworks', image: '/solidworks.jpg' },
+    { title: 'Autodesk Fusion 360', image: '/autodesk-fusion.jpg' },
     { title: 'Digital Marketing', image: '/digital-marketing.jpg' },
-    // ... more courses
+    { title: 'IT Related Courses', image: '/it-related.jpg' },
+    // You can add more specific IT courses here if you like
+    // { title: 'Programming Fundamentals', image: '/programming.jpg' },
+    // { title: 'Network Administration', image: '/networking.jpg' },
+    // { title: 'Cybersecurity Basics', image: '/cybersecurity.jpg' },
   ];
 
   return (

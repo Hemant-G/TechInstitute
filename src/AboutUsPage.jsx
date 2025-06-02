@@ -94,8 +94,7 @@ const AboutUsPage = () => {
           <div className="md:w-1/2">
             <h2 className="text-xl font-bold text-gray-700 mb-2">ABOUT</h2>
             <h1 className="text-3xl lg:text-4xl font-bold  text-gray-800 mb-6">
-              Welcome to <span className="text-blue-800">TECHCADD</span>{" "}
-              <span className="text-blue-800">COMPUTER EDUCATION</span>
+              Welcome to <span className="text-blue-800">SMG CADD CENTRE</span>{" "}
             </h1>
             <p className="text-gray-600 font-semibold text-lg mb-4">
               Our Institute provides students with a quality Education. We

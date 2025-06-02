@@ -1,11 +1,19 @@
 import React from 'react'
-import HomePage from './HomePage'
+import { Outlet } from "react-router";
+import Navbar from './Navbar';
+import ContactUs from './ContactUs';
+import Footer from './Footer';
+import TopBar from './TopBar';
 
 function App() {
   return (
-    <div>
-      <HomePage />
-    </div>
+    <>
+      <TopBar />
+        <Navbar />
+        <Outlet />
+        <ContactUs />
+        <Footer />
+    </>
   )
 }
 
