@@ -7,6 +7,9 @@ import HomePage from './HomePage.jsx'
 import ContactPage from './ContactPage.jsx';
 import AboutUsPage from './AboutUsPage.jsx';
 import TeamPage from './TeamPage.jsx';
+import AutoCAD from './AutoCAD.jsx';
+import WebDev from './WebDev.jsx'
+
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
@@ -16,8 +19,13 @@ createRoot(document.getElementById('root')).render(
         <Route path='about' element={<AboutUsPage />} />
         <Route path='contact' element={<ContactPage />} />
         <Route path='team' element={<TeamPage /> } />
-
       </Route>
+      <Route path='/courses' element={<App />} >
+        <Route path='autocad' element={<AutoCAD />} />
+      </Route>
+      <Route path='/training' element={<App />} >
+        <Route path='web-development' element={<WebDev />} />
+        </Route>
     </Routes>
   </BrowserRouter>
 )

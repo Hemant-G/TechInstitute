@@ -2,10 +2,12 @@ import React, { useState, useEffect } from 'react';
 
 const Navbar = () => {
   const [isSticky, setIsSticky] = useState(false);
+  const [isCoursesDropdownOpen, setIsCoursesDropdownOpen] = useState(false);
+  const [isTrainingDropdownOpen, setIsTrainingDropdownOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 100) { // Adjust scroll threshold as needed
+      if (window.scrollY > 100) {
         setIsSticky(true);
       } else {
         setIsSticky(false);
@@ -13,10 +15,7 @@ const Navbar = () => {
     };
 
     window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const navbarClasses = `shadow-md py-4 px-20 font-bold text-lg sticky top-0 z-50 ${
@@ -26,43 +25,128 @@ const Navbar = () => {
   }`;
 
   const linkHoverClass = isSticky ? 'hover:text-blue-300' : 'hover:text-blue-700';
+  const dropdownLinkHoverClass = 'hover:bg-gray-100 rounded-sm hover:text-gray-900';
+  const dropdownBgClass = 'bg-blue-900 shadow-lg text-white rounded-lg overflow-hidden grid grid-cols-1 w-80 absolute left-0 top-full';
+
+  const mainNavOptions = [
+    { label: 'Home', href: '/' },
+    { label: 'About Us', href: '/about' },
+    {
+      label: 'Courses',
+  
+      dropdown: [
+        { label: 'Autocad', href: '/courses/autocad' },
+        { label: 'Catia', href: '/courses/catia' },
+        { label: 'Solidworks', href: '/courses/solidworks' },
+        { label: 'Autodesk Fusion', href: '/courses/autodesk-fusion' },
+        { label: 'Digital Marketing', href: '/courses/digital-marketing' },
+        { label: 'IT related courses', href: '/courses/it-related' },
+      ],
+    },
+    {
+      label: 'Training Programs',
+      href: '/training',
+      dropdown: [
+        { label: 'Web Development', href: '/training/web-development' },
+        { label: 'Web Designing', href: '/training/web-designing' },
+        { label: 'PHP Training', href: '/training/php' },
+        { label: 'C Programming', href: '/training/c-programming' },
+        { label: '120 Hours Computer Course', href: '/training/computer-course' },
+      ],
+    },
+    { label: 'Our Team', href: '/team' },
+    { label: 'Contact Us', href: '/contact' },
+    { label: 'Blog', href: '/blog' },
+    { label: 'Careers', href: '/career' },
+  ];
 
   return (
     <nav className={navbarClasses}>
       <div className="container mx-auto px-6 flex items-center justify-between">
         <div className="flex items-center">
-          <img
-            src="../src/assets/logo.jpg"
-            alt="Logo"
-            className="h-16 mr-2"
-          />
+          <img src="../src/assets/logo.jpg" alt="Logo" className="h-16 mr-2" />
         </div>
+
         <div className="hidden md:flex space-x-6">
-          <a href="/" className={linkHoverClass}>
-            Home
-          </a>
-          <a href="/about" className={linkHoverClass}>
-            About Us
-          </a>
-          <a href="/courses" className={linkHoverClass}>
-            Our Courses
-          </a>
-          <a href="/training" className={linkHoverClass}>
-            Training Programs
-          </a>
-          <a href="/team" className={linkHoverClass}>
-            Our Team
-          </a>
-          <a href="/contact" className={linkHoverClass}>
-            Contact Us
-          </a>
-          <a href="/blog" className={linkHoverClass}>
-            Blog
-          </a>
-          <a href="/career" className={linkHoverClass}>
-            Careers
-          </a>
+          {mainNavOptions.map((option) => {
+            if (option.label === 'Courses') {
+              return (
+                <div
+                  key={option.label}
+                  className="relative group"
+                  onMouseEnter={() => {
+                    setIsCoursesDropdownOpen(true);
+                    setIsTrainingDropdownOpen(false);
+                  }}
+                  onMouseLeave={() => setIsCoursesDropdownOpen(false)}
+                >
+                  <a href={option.href} className={`${linkHoverClass} cursor-pointer`}>
+                    {option.label}
+                  </a>
+                  {option.dropdown && (
+                    <div
+                      className={`${dropdownBgClass}
+                        opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100
+                        transition-all duration-200 ease-out pointer-events-none group-hover:pointer-events-auto`}
+                    >
+                      {option.dropdown.map((dropdownItem) => (
+                        <a
+                          key={dropdownItem.label}
+                          href={dropdownItem.href}
+                          className={`${dropdownLinkHoverClass} block px-4 py-2 text-sm`}
+                        >
+                          {dropdownItem.label}
+                        </a>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              );
+            }
+
+            if (option.label === 'Training Programs') {
+              return (
+                <div
+                  key={option.label}
+                  className="relative group"
+                  onMouseEnter={() => {
+                    setIsTrainingDropdownOpen(true);
+                    setIsCoursesDropdownOpen(false);
+                  }}
+                  onMouseLeave={() => setIsTrainingDropdownOpen(false)}
+                >
+                  <a href={option.href} className={`${linkHoverClass} cursor-pointer`}>
+                    {option.label}
+                  </a>
+                  {option.dropdown && (
+                    <div
+                      className={`${dropdownBgClass}
+                        opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100
+                        transition-all duration-300 ease-out pointer-events-none group-hover:pointer-events-auto`}
+                    >
+                      {option.dropdown.map((dropdownItem) => (
+                        <a
+                          key={dropdownItem.label}
+                          href={dropdownItem.href}
+                          className={`${dropdownLinkHoverClass} block px-4 py-2 text-sm`}
+                        >
+                          {dropdownItem.label}
+                        </a>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              );
+            }
+
+            return (
+              <a key={option.label} href={option.href} className={linkHoverClass}>
+                {option.label}
+              </a>
+            );
+          })}
         </div>
+
         <div className="md:hidden">
           {/* Mobile Menu Icon */}
           <button className="focus:outline-none">
@@ -80,7 +164,6 @@ const Navbar = () => {
               />
             </svg>
           </button>
-          {/* Implement actual mobile menu */}
         </div>
       </div>
     </nav>
