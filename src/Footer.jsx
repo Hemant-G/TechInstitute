@@ -7,7 +7,7 @@ const Footer = () => {
         <div>
           <img
             src="../src/assets/logo.jpg"
-            alt="Tech CADD Logo"
+            alt="SMG CADD Logo"
             className="h-8 mb-2"
           />{" "}
           {/* Replace */}
@@ -50,7 +50,7 @@ const Footer = () => {
             Shop No 4, City Center Near Bus Stand Hoshiarpur, Punjab 146001
           </p>
           <p className="text-sm">6284347710</p>
-          <p className="text-sm">info.techcaddjalandhar@gmail.com</p>
+          <p className="text-sm">info.smgcadd@gmail.com</p>
         </div>
         <div>
           <h3 className="font-semibold text-gray-400 mb-2">Courses</h3>
@@ -76,7 +76,7 @@ const Footer = () => {
       </div>
       <div className="text-center text-gray-500 mt-8">
         <p>
-          &copy; {new Date().getFullYear()} Tech CADD Computer Education. All
+          &copy; {new Date().getFullYear()} SMG CADD Computer Education. All
           rights reserved.
         </p>
       </div>

@@ -7,8 +7,8 @@
         name: "Tarampreet Singh",
         role: "Student",
         content: [
-          "I am mechanical cad student at Techcadd computer education. It's been one month to me while learning here. The environment is very friendly and teachers are very helpful with great knowledge. I'd like to recommend to all of you that you should come here and enhance your skills. Last but not the least Techcadd computer education is the best institute in Hoshiarpur.",
-          "The institute provides one to one teaching with flexible timings. Currently, I'm pursuing 6 months digital marketing course here as it provides you with variety of fascinating courses at affordable prices. TechCadd hoshiarpur is not only limited to teaching but provides great placement offers as well to make their students career bright."
+          "I am mechanical cad student at SMG Cadd computer education. It's been one month to me while learning here. The environment is very friendly and teachers are very helpful with great knowledge. I'd like to recommend to all of you that you should come here and enhance your skills. Last but not the least SMG Cadd computer education is the best institute in Hoshiarpur.",
+          "The institute provides one to one teaching with flexible timings. Currently, I'm pursuing 6 months digital marketing course here as it provides you with variety of fascinating courses at affordable prices. SMG Cadd hoshiarpur is not only limited to teaching but provides great placement offers as well to make their students career bright."
         ],
         initial: "T"
       },
@@ -26,7 +26,7 @@
         name: "Sharanjit Kaur",
         role: "Student",
         content: [
-          "I came to know about this institution through my friend. My name is Sharanjit Kaur Lately! I have completed my graduation in BA Hons . My teacher's name is Preeti , the way of her teaching style is best as she is able to make me understand everything very easily. I study basic computer course at Techcadd Computer Institute. Would recommend this center. Best accounting training in Hoshiarpur."
+          "I came to know about this institution through my friend. My name is Sharanjit Kaur Lately! I have completed my graduation in BA Hons . My teacher's name is Preeti , the way of her teaching style is best as she is able to make me understand everything very easily. I study basic computer course at SMG Cadd Computer Institute. Would recommend this center. Best accounting training in Hoshiarpur."
         ],
         initial: "S"
       },
@@ -45,7 +45,7 @@
         name: "DIKSHA",
         role: "Student",
         content: [
-          "The institute provides one to one teaching with flexible timings. Currently, I'm pursuing 6 months digital marketing course here as it provides you with variety of fascinating courses at affordable prices. TechCadd hoshiarpur is not only limited to teaching but provides great placement offers as well to make their students career bright."
+          "The institute provides one to one teaching with flexible timings. Currently, I'm pursuing 6 months digital marketing course here as it provides you with variety of fascinating courses at affordable prices. SMG Cadd hoshiarpur is not only limited to teaching but provides great placement offers as well to make their students career bright."
         ],
         initial: "D"
       }
