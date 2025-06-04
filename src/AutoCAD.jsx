@@ -39,7 +39,7 @@ const AutoCADPage = () => {
           <div className="flex items-center gap-8">
             <div className="flex-1">
               <img
-                src='../public/autocad.jpg' // Replace with your actual image URL
+                src='../autocad.jpg' // Replace with your actual image URL
                 alt="AutoCAD Interface"
                 className="rounded-md shadow-md"
               />

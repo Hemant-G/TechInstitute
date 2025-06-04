@@ -56,7 +56,7 @@ const Navbar = () => {
     <nav className={navbarClasses}>
       <div className="container mx-auto px-6 flex items-center justify-between">
         <div className="flex items-center">
-          <img src="../public/logo.jpg" alt="Logo" className="h-16 mr-2" />
+          <img src="../logo.jpg" alt="Logo" className="h-16 mr-2" />
         </div>
 
         <div className="hidden md:flex space-x-6">
