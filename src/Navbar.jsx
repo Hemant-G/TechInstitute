@@ -55,9 +55,7 @@ const Navbar = () => {
       ],
     },
     { label: 'Our Team', href: '/team' },
-    { label: 'Contact Us', href: '/contact' },
-    { label: 'Blog', href: '/blog' },
-    { label: 'Careers', href: '/career' },
+    { label: 'Contact Us', href: '/contact' }
   ];
 
   return (
