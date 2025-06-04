@@ -68,7 +68,7 @@ const WebDev = () => {
             {/* Added min-w-48 */}
             <div className="relative h-32 md:h-40 flex-shrink-0">
               <img
-                src="../src/assets/php2.png"
+                src="../public/php2.png"
                 alt="PHP Diagram"
                 className="w-full h-full object-contain p-2"
               />
@@ -88,7 +88,7 @@ const WebDev = () => {
             {/* Added min-w-48 */}
             <div className="relative h-32 md:h-40 flex-shrink-0">
               <img
-                src="../src/assets/mysql2.png"
+                src="../public/mysql2.png"
                 alt="MySQL Logo"
                 className="w-full h-full object-contain p-2"
               />
@@ -108,7 +108,7 @@ const WebDev = () => {
             {/* Added min-w-48 */}
             <div className="relative h-32 md:h-40 flex-shrink-0">
               <img
-                src="../src/assets/ajax2.png"
+                src="../public/ajax2.png"
                 alt="AJAX Logo"
                 className="w-full h-full object-contain p-2"
               />
@@ -131,7 +131,7 @@ const WebDev = () => {
             {/* Added min-w-48 */}
             <div className="relative h-48 md:h-64 flex-shrink-0">
               <img
-                src="../src/assets/api2.jpg"
+                src="../public/api2.jpg"
                 alt="API Integration"
                 className="w-full h-full object-contain p-2"
               />
@@ -156,7 +156,7 @@ const WebDev = () => {
             {/* Added min-w-48 */}
             <div className="relative h-48 md:h-64 flex-shrink-0">
               <img
-                src="../src/assets/domainnew.png"
+                src="../public/domainnew.png"
                 alt="Domain and Hosting"
                 className="w-full h-full object-contain p-2"
               />
