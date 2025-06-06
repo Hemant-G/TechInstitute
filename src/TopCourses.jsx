@@ -61,7 +61,7 @@ const TopCourses = () => {
   return (
     <div className="bg-gray-100 py-12">
       <div className="container mx-auto text-center">
-        <h2 className="text-2xl font-bold text-blue-700 mb-8">Our Top Courses</h2>
+        <h2 className="text-3xl font-bold text-blue-700 mb-8">Our Top Courses</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {courses.map((course, index) => (
             <CourseCard key={index} {...course} />

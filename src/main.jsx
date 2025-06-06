@@ -9,6 +9,7 @@ import AboutUsPage from './AboutUsPage.jsx';
 import TeamPage from './TeamPage.jsx';
 import AutoCAD from './AutoCAD.jsx';
 import WebDev from './WebDev.jsx'
+import Gallery from './Gallery.jsx';
 
 
 createRoot(document.getElementById('root')).render(
@@ -19,6 +20,7 @@ createRoot(document.getElementById('root')).render(
         <Route path='about' element={<AboutUsPage />} />
         <Route path='contact' element={<ContactPage />} />
         <Route path='team' element={<TeamPage /> } />
+        <Route path='gallery' element={<Gallery /> } />
       </Route>
       <Route path='/courses' element={<App />} >
         <Route path='autocad' element={<AutoCAD />} />

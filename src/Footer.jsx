@@ -12,7 +12,7 @@ const Footer = () => {
           />{" "}
           {/* Replace */}
           <p className="text-sm">
-            Shop No 4, City Center Near Bus Stand Hoshiarpur, Punjab 146001
+            Office 370 , Eminent Mall , Hoshiarpur 146001
           </p>
           <div className="flex space-x-4 mt-4">
             <a href="/" className="hover:text-white">
@@ -47,10 +47,10 @@ const Footer = () => {
         <div>
           <h3 className="font-semibold text-gray-400 mb-2">Address</h3>
           <p className="text-sm">
-            Shop No 4, City Center Near Bus Stand Hoshiarpur, Punjab 146001
+            Office 370 , Eminent Mall , Hoshiarpur 146001
           </p>
-          <p className="text-sm">6284347710</p>
-          <p className="text-sm">info.smgcadd@gmail.com</p>
+          <p className="text-sm">+1882 318 705</p>
+          <p className="text-sm">smgcadd@gmail.com</p>
         </div>
         <div>
           <h3 className="font-semibold text-gray-400 mb-2">Courses</h3>
@@ -76,7 +76,7 @@ const Footer = () => {
       </div>
       <div className="text-center text-gray-500 mt-8">
         <p>
-          &copy; {new Date().getFullYear()} SMG CADD Computer Education. All
+          &copy; {new Date().getFullYear()} SMG CADD. All
           rights reserved.
         </p>
       </div>

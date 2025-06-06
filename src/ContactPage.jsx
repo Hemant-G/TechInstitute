@@ -128,7 +128,7 @@ const Contact = () => {
               <div className="col-span-2">
                 <button
                   type="submit"
-                  className="bg-red-500 w-full hover:bg-red-700 text-white font-bold py-3 px-6 rounded  focus:outline-none focus:shadow-outline"
+                  className="bg-blue-500 w-full hover:bg-blue-700 text-white font-bold py-3 px-6 rounded  focus:outline-none focus:shadow-outline"
                 >
                   Submit Now
                 </button>

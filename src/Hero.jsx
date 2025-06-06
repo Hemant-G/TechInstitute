@@ -3,15 +3,7 @@ import React, { useState } from 'react';
 const Hero = () => {
   const [currentBackgroundIndex, setCurrentBackgroundIndex] = useState(0);
   const backgrounds = [
-    'bg-gradient-to-r from-gray-900 to-gray-800',
-    'bg-gradient-to-r from-indigo-900 to-blue-700',
-    'bg-gradient-to-r from-green-800 to-teal-700',
-    'bg-gradient-to-r from-red-800 to-rose-700',
-    
-    'bg-gradient-to-r from-teal-900 to-green-700',   // Another green variant
-    'bg-gradient-to-r from-rose-900 to-red-700',    // Another red variant
-    'bg-gradient-to-r from-slate-900 to-gray-700',   // Another gray variant
-    'bg-gradient-to-r from-fuchsia-800 to-purple-600', // A purple/pink mix
+    'bg-gradient-to-l from-blue-950 to-blue-900 ',
   ];
 
   const nextBackground = () => {
@@ -49,57 +41,53 @@ const Hero = () => {
         {/* Bottom Content (Why Us Divs) */}
         <div className="flex flex-row w-full justify-center items-end gap-6">
         <div className="flex flex-row w-full justify-center items-end gap-6">
-  <div className="bg-[#1C2541] flex flex-row w-1/4 items-center text-white p-6 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:-translate-y-2 hover:shadow-lg">
-  <svg className="h-10 w-10 text-blue-700 mr-4"
-  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-  <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
-  <path d="M8 21h8" />
-</svg>
-    <div>
-      <h3 className="text-xl md:text-2xl font-semibold mb-1">
-        All Computer Courses
-      </h3>
-      <p className="text-base md:text-lg text-gray-300">
-        Enjoy a variety of fresh topics
-      </p>
-    </div>
-  </div>
-
-  <div className="bg-[#1C2541] flex flex-row w-1/4 items-center text-white p-6 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:-translate-y-2 hover:shadow-lg">
-  <svg className="h-10 w-10 text-blue-700 mr-4"
-  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
-  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
-</svg>
-    <div>
-      <h3 className="text-xl md:text-2xl font-semibold mb-1">Expert Instruction</h3>
-      <p className="text-base md:text-lg text-gray-300">
-        Find the right instructor
-      </p>
-    </div>
-  </div>
-
-  <div className="bg-[#1C2541] flex flex-row w-1/4 items-center text-white p-6 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:-translate-y-2 hover:shadow-lg">
-    <svg
-      className="h-10 w-10 text-blue-700 mr-4"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
+  <div className="flex flex-col md:flex-row w-full justify-center items-stretch gap-6 mt-8">
+  {[
+    {
+      title: 'All Computer Courses',
+      description: 'Enjoy a variety of fresh topics',
+      icon: (
+        <svg className="h-10 w-10 text-blue-700 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+          <path d="M8 21h8" />
+        </svg>
+      ),
+    },
+    {
+      title: 'Expert Instruction',
+      description: 'Find the right instructor',
+      icon: (
+        <svg className="h-10 w-10 text-blue-700 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+          <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+        </svg>
+      ),
+    },
+    {
+      title: 'Flexible Timings',
+      description: 'Learn on your schedule',
+      icon: (
+        <svg className="h-10 w-10 text-blue-700 mr-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <circle cx="12" cy="12" r="10" />
+          <polyline points="12 6 12 12 16 14" />
+        </svg>
+      ),
+    },
+  ].map((card, idx) => (
+    <div
+      key={idx}
+      className="bg-[#1C2541] flex flex-row items-start text-white p-6 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:-translate-y-2 hover:shadow-lg basis-0 flex-1 min-h-[150px]"
     >
-      <circle cx="12" cy="12" r="10" />
-      <polyline points="12 6 12 12 16 14" />
-    </svg>
-    <div>
-      <h3 className="text-xl md:text-2xl font-semibold mb-1">Flexible Timings</h3>
-      <p className="text-base md:text-lg text-gray-300">
-        Learn on your schedule
-      </p>
+      {card.icon}
+      <div>
+        <h3 className="text-xl md:text-2xl font-semibold mb-1">{card.title}</h3>
+        <p className="text-base md:text-lg text-gray-300">{card.description}</p>
+      </div>
     </div>
-  </div>
+  ))}
 </div>
+        </div>
+
         </div>
 
         {/* Right Arrow */}

@@ -1,6 +1,5 @@
 import Navbar from './Navbar';
 import Hero from './Hero';
-import PopularCourses from './PopularCourses';
 import FAQ from './FAQ';
 import ContactUs from './ContactUs';
 import Footer from './Footer';
@@ -14,7 +13,6 @@ function HomePage() {
   return (
     <div>
       <Hero />
-      <PopularCourses />
       <RegisterNow />
       <TopCourses />
       <FAQ />

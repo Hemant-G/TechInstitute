@@ -37,19 +37,9 @@ const Navbar = () => {
         { label: 'IT related courses', href: '/courses/it-related' },
       ],
     },
-    {
-      label: 'Training Programs',
-      href: '/training',
-      dropdown: [
-        { label: 'Web Development', href: '/training/web-development' },
-        { label: 'Web Designing', href: '/training/web-designing' },
-        { label: 'PHP Training', href: '/training/php' },
-        { label: 'C Programming', href: '/training/c-programming' },
-        { label: '120 Hours Computer Course', href: '/training/computer-course' },
-      ],
-    },
     { label: 'Our Team', href: '/team' },
-    { label: 'Contact Us', href: '/contact' }
+    { label: 'Contact Us', href: '/contact' },
+    {label: 'Gallery', href: '/gallery'},
   ];
 
   return (
