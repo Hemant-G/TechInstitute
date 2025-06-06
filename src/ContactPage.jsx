@@ -18,8 +18,7 @@ const Contact = () => {
             <div>
               <h3 className="font-semibold text-gray-800">Address</h3>
               <p className="text-gray-600 text-sm">
-                Shop No 4, City Center, near Bus Stand. <br />
-                Model colony, Hoshiarpur, Punjab <br />
+                Office 370 , Eminent Mall , Hoshiarpur  <br />
                 146001
               </p>
             </div>
@@ -33,7 +32,7 @@ const Contact = () => {
             <div>
               <h3 className="font-semibold text-gray-800">Email Address</h3>
               <p className="text-gray-600 text-sm">
-                info.smgcadd@gmail.com
+                smgcadd@gmail.com
               </p>
             </div>
           </div>
@@ -45,7 +44,7 @@ const Contact = () => {
             </div>
             <div>
               <h3 className="font-semibold text-gray-800">Phone Number</h3>
-              <p className="text-gray-600 text-sm">6284347710</p>
+              <p className="text-gray-600 text-sm">+1882 318 705</p>
             </div>
           </div>
         </div>
@@ -57,7 +56,7 @@ const Contact = () => {
             <div className="rounded-md overflow-hidden shadow-sm">
                {" "}
               <iframe
-                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBpQgwigp3DjPajYTFvfah20aLhS1aM41M&q=place_id:ChIJtV9FpdHiGjkR2pLuhx7jUU0"
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBpQgwigp3DjPajYTFvfah20aLhS1aM41M&q=place_id:ChIJZ83UIgPjGjkRsbHvlhCFMNM"
                 width="100%"
                 height="500"
                 style={{ border: 0 }}
